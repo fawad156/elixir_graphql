@@ -20,6 +20,11 @@ defmodule ElixirGraphqlWeb.Router do
     get "/", PageController, :index
   end
 
+  # graphql
+  scope "graphql" do
+    forward "/", Absinthe.Plug.GraphiQL, schema: ElixirGraphqlWeb.Schema
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", ElixirGraphqlWeb do
   #   pipe_through :api

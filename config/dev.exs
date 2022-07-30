@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :elixir_graphql, ElixirGraphql.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "fawad",
+  password: "fawad",
   hostname: "localhost",
   database: "elixir_graphql_dev",
   stacktrace: true,
